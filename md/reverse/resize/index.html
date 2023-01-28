@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u753b\u50cf\u30b5\u30a4\u30ba\u3092\u5909\u66f4\u3057\u3001\u4e2d\u592e\u306b\u914d\u7f6e\u3059\u308b";
+        var mkdocs_page_input_path = "md\\reverse\\resize.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">画像サイズを変更し、中央に配置する</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">画像サイズの変更</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">キャンバスサイズの変更</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">新規レイヤーの追加</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">レイヤー順序の変更</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>逆引き &raquo;</li>
+      <li>画像サイズを変更し、中央に配置する</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">画像サイズを変更し、中央に配置する</h1>
+<p>大きめの画像を小さいサイズにします。
+以下では、元のサイズを<strong>初期サイズ</strong>、変更後のサイズを<strong>目的サイズ</strong>と呼びます。</p>
+<p>画像の縮尺は縦横比固定とし、<u>余った領域には白い背景色で余白を作る</u>ものとします。
+余白を作ることで、目的サイズぎりぎりまで画像で埋め尽くしてしまい、窮屈な印象にならないようにします。
+また、文字列の挿入等も容易になるようにしておきます。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここでは例として、初期サイズを 583×800 とし、目的サイズを 500×500 の正方形とします。</p>
+</div>
+<div class="diff">
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更前</figcaption>
+      <img src="../../../img/resize/01_original.png" alt="変更前">
+    </figure>
+  </div>
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更後</figcaption>
+      <img src="../../../img/resize/02_after.png" alt="変更後">
+    </figure>
+  </div>
+</div>
+
+<h2 id="_2">画像サイズの変更</h2>
+<p>画像は読み込んでおきます。</p>
+<ol>
+<li>メインメニューより、 <code>画像</code> &gt; <code>画像の拡大・縮小</code> を選択</li>
+<li>ウィンドウ <code>画像の拡大・縮小</code> で、 <code>キャンパスサイズ(画像サイズ)</code> の <code>幅</code> と <code>高さ</code> のうち、大きい方を目的サイズよりもやや小さい値に設定<ul>
+<li>ここでは <code>高さ</code> を <code>480</code> に</li>
+</ul>
+</li>
+<li>ボタン <code>拡大・縮小</code> を押下</li>
+</ol>
+<p>画像の大きさが変更されます。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>サイズを変更する際には、 <code>キャンパスサイズ(画像サイズ)</code> の <code>チェーン</code> <img alt="チェーン" src="../../../img/common/chain.png" /> が外れていないことを確認し、縦横比が崩れないようにします。</p>
+</div>
+<p><img alt="画像サイズの変更" src="../../../img/resize/03_resize.png" /></p>
+<h2 id="_3">キャンバスサイズの変更</h2>
+<p>キャンバスサイズを変更します。</p>
+<ol>
+<li>メインメニューより、 <code>画像</code> &gt; <code>キャンバスサイズの変更</code> を選択</li>
+<li><code>キャンバスサイズ</code> の <code>幅</code> と <code>高さ</code> を目的サイズに設定<ul>
+<li>ここでは両方を <code>500</code> に</li>
+</ul>
+</li>
+<li><code>オフセット</code> 蘭で、ボタン <code>中央</code> を押下</li>
+<li>ボタン <code>リサイズ</code> を押下</li>
+</ol>
+<p>これで、キャンバスは目的サイズになります。
+ただし、レイヤーは先に変更した画像サイズのまま、キャンバスの中央に配置されています。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>レイヤーは点線で示された領域です。</p>
+</div>
+<p><img alt="キャンパスサイズの変更" src="../../../img/resize/04_resize.png" /></p>
+<h2 id="_4">新規レイヤーの追加</h2>
+<p>背景となる新しいレイヤーを追加します。</p>
+<ol>
+<li>メインメニューより、 <code>レイヤー</code> &gt; <code>新しいレイヤー</code> を選択</li>
+<li><code>レイヤー名</code> を「背景」など適当な名称に変更</li>
+<li><code>モード</code> を <code>標準</code> にする<ul>
+<li><code>乗算</code> になっていると透過状態からの塗りつぶしができない</li>
+</ul>
+</li>
+<li><code>塗りつぶし色</code> を <code>白</code> にする</li>
+<li>ボタン <code>OK</code> を押下</li>
+</ol>
+<p>一見、全面が白い画像になります。</p>
+<p><img alt="新規レイヤーの追加" src="../../../img/resize/05_resize.png" /></p>
+<h2 id="_5">レイヤー順序の変更</h2>
+<p>レイヤーの順序を入れ替えます。</p>
+<ol>
+<li>ドックのレイヤーダイアログで背景が後ろに来るように変更</li>
+</ol>
+<p>完成です。</p>
+<p><img alt="レイヤー順序の変更" src="../../../img/resize/02_after.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../simple-resize/" class="btn btn-neutral float-left" title="画像サイズを変更する"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../trimming/" class="btn btn-neutral float-right" title="画像の一部を切り取り、中央に配置する">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../simple-resize/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../trimming/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/custom.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30c4\u30fc\u30eb\u30dc\u30c3\u30af\u30b9";
+        var mkdocs_page_input_path = "md\\basic\\window\\toolbox.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">ウィンドウ</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">ツールボックス</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#_2">選択ツール</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">描画ツール</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">変形ツール</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">その他のツール</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>基本編 &raquo;</li>
+          <li>ウィンドウ &raquo;</li>
+      <li>ツールボックス</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">ツールボックス</h1>
+<p>GIMP のヘルプは、ツールボックスに並ぶツールアイコン群を、下記のように大きく 4 つのツール群に分類して説明しています。
+下記の<strong>その他のツール</strong>を除くそれぞれのツール群には、共通の機能や共通の<strong>キー修飾</strong>があります。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>何らかの操作をする際に、キー <code>Ctrl</code> と <code>Shift</code> と <code>Alt</code> のうち、ひとつ以上押下し続けることを<strong>キー修飾</strong>と呼びます。</p>
+</div>
+<ul>
+<li>選択ツール</li>
+<li>描画ツール</li>
+<li>変形ツール</li>
+<li>その他のツール</li>
+</ul>
+<h2 id="_2">選択ツール</h2>
+<p><strong>選択ツール</strong>は、範囲を選択するためのツールです。選択された範囲は<u>白と黒の動く破線で囲まれ</u>、切り取ったり塗りつぶしたりできるようになります。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>選択ツールは現在選択されている<a href="../../canvas-layer/layer/">レイヤー</a>に対して機能します。<u>選択ツールを使用する際には、レイヤーの選択状態を確認</u>しましょう。</p>
+</div>
+<p>選択ツールには 7 種類あります。</p>
+<p><img alt="選択ツール" src="../../../../img/basic/window/02_selecttool.png" /></p>
+<ul>
+<li>矩形選択</li>
+<li>楕円選択</li>
+<li>自由選択</li>
+<li>電脳はさみ</li>
+<li>前景抽出選択</li>
+<li>ファジー選択</li>
+<li>色域を選択</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>これらのツールは、メニューバー <code>ツール</code> &gt; <code>選択ツール</code> 配下の一覧からも選択できます。</p>
+</div>
+<h2 id="_3">描画ツール</h2>
+<p><strong>描画ツール</strong>は、マウスポインタを使って描画したり、画像を加工したりするためのツールです。</p>
+<p>描画ツールには 14 種類あります。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>GIMP 2.10.32 に付随するヘルプでは、「13 種類の「描画ツール」があり」と記載されている箇所があります。
+これは 2.10 から追加されたツール <code>MyPaint ブラシで描画</code> が抜けているためです。</p>
+</div>
+<p><img alt="選択ツール" src="../../../../img/basic/window/03_selecttool.png" /></p>
+<p>描画ツールのうち下記の 3 つは、ブラシで塗る基本的なツールのため、特に<strong>ブラシツール</strong>と呼ばれます。</p>
+<ul>
+<li>ブラシで描画</li>
+<li>鉛筆で描画</li>
+<li>エアブラシで描画</li>
+</ul>
+<p>他に、マウスポインタで描画するツールには、以下の 2 つがあります。</p>
+<ul>
+<li>インクで描画</li>
+<li>MyPaint ブラシで描画</li>
+</ul>
+<p>他には下記のようなツールがあります。</p>
+<table>
+<thead>
+<tr>
+<th>アイコン</th>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="塗りつぶし" src="../../../../img/basic/window/04_painttool.png" /></td>
+<td>塗りつぶし</td>
+<td>レイヤー全体、あるいは選択範囲を塗りつぶす</td>
+</tr>
+<tr>
+<td><img alt="グラデーション" src="../../../../img/basic/window/05_painttool.png" /></td>
+<td>グラデーション</td>
+<td>選択開始点から終端点まで、グラデーションで塗りつぶす</td>
+</tr>
+<tr>
+<td><img alt="消しゴム" src="../../../../img/basic/window/06_painttool.png" /></td>
+<td>消しゴム</td>
+<td>描画を消して透過状態にする</td>
+</tr>
+<tr>
+<td><img alt="スタンプで描画" src="../../../../img/basic/window/07_painttool.png" /></td>
+<td>スタンプで描画</td>
+<td>スタンプソースとして指定した画像やパターンでスタンプする</td>
+</tr>
+<tr>
+<td><img alt="遠近スタンプで描画" src="../../../../img/basic/window/08_painttool.png" /></td>
+<td>遠近スタンプで描画</td>
+<td>遠近感をつけてスタンプする</td>
+</tr>
+<tr>
+<td><img alt="修復ブラシ" src="../../../../img/basic/window/09_painttool.png" /></td>
+<td>修復ブラシ</td>
+<td>画像を修復する</td>
+</tr>
+<tr>
+<td><img alt="にじみ" src="../../../../img/basic/window/10_painttool.png" /></td>
+<td>にじみ</td>
+<td>にじませる</td>
+</tr>
+<tr>
+<td><img alt="ぼかし/シャープ" src="../../../../img/basic/window/11_painttool.png" /></td>
+<td>ぼかし/シャープ</td>
+<td>ぼかしやコントラストをつける</td>
+</tr>
+<tr>
+<td><img alt="暗室" src="../../../../img/basic/window/12_painttool.png" /></td>
+<td>暗室</td>
+<td>明るさを変化させる</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>描画ツールも選択ツール同様に、現在選択されている<a href="../../canvas-layer/layer/">レイヤー</a>に対して機能します。<u>描画ツールを使用する際には、レイヤーの選択状態を確認</u>しましょう。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>これらのツールは、メニューバー <code>ツール</code> &gt; <code>描画ツール</code> 配下の一覧からも選択できます。</p>
+</div>
+<h2 id="_4">変形ツール</h2>
+<p><strong>変形ツール</strong>は、レイヤーや選択範囲やパスなどを対象として、移動や整列や変形などを行うためのツールです。</p>
+<p>変形ツールには 13 種類あります。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>ヘルプの更新が GIMP 本体の更新に追いついていないためか、 GIMP 2.10.32 に付随するヘルプでは、「変形ツールメニューには 8 つのツールが並んでいます」と記載されている箇所があります。</p>
+</div>
+<p><img alt="変形ツール" src="../../../../img/basic/window/13_transformtool.png" /></p>
+<p>変形ツールには下記のようなものがあります。</p>
+<table>
+<thead>
+<tr>
+<th>アイコン</th>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="移動" src="../../../../img/basic/window/14_transformtool.png" /></td>
+<td>移動</td>
+<td>対象を移動する</td>
+</tr>
+<tr>
+<td><img alt="整列" src="../../../../img/basic/window/15_transformtool.png" /></td>
+<td>整列</td>
+<td>対象を整列する</td>
+</tr>
+<tr>
+<td><img alt="切り抜き" src="../../../../img/basic/window/16_transformtool.png" /></td>
+<td>切り抜き</td>
+<td>キャンバスを縮小して対象を切り抜く</td>
+</tr>
+<tr>
+<td><img alt="統合変形" src="../../../../img/basic/window/17_transformtool.png" /></td>
+<td>統合変形</td>
+<td>レイヤーや選択範囲やパスを変形する</td>
+</tr>
+<tr>
+<td><img alt="回転" src="../../../../img/basic/window/18_transformtool.png" /></td>
+<td>回転</td>
+<td>レイヤーや選択範囲やパスを回転する</td>
+</tr>
+<tr>
+<td><img alt="拡大・縮小" src="../../../../img/basic/window/19_transformtool.png" /></td>
+<td>拡大・縮小</td>
+<td>レイヤーや選択範囲やパスを拡大または縮小する</td>
+</tr>
+<tr>
+<td><img alt="剪断変形" src="../../../../img/basic/window/20_transformtool.png" /></td>
+<td>剪断変形</td>
+<td>レイヤーや選択範囲やパスを剪断変形（長方形を平行四辺形に）する</td>
+</tr>
+<tr>
+<td><img alt="鏡像反転" src="../../../../img/basic/window/21_transformtool.png" /></td>
+<td>鏡像反転</td>
+<td>レイヤーや選択範囲やパスを上下または左右に反転する</td>
+</tr>
+<tr>
+<td><img alt="遠近法" src="../../../../img/basic/window/22_transformtool.png" /></td>
+<td>遠近法</td>
+<td>レイヤーや選択範囲やパスに遠近感を与える</td>
+</tr>
+<tr>
+<td><img alt="3D 変換" src="../../../../img/basic/window/23_transformtool.png" /></td>
+<td>3D 変換</td>
+<td>レイヤーや選択範囲やパスを三次元空間に置いて回転する</td>
+</tr>
+<tr>
+<td><img alt="ハンドル変形" src="../../../../img/basic/window/24_transformtool.png" /></td>
+<td>ハンドル変形</td>
+<td>レイヤーや選択範囲やパスを小円のハンドルで変形する</td>
+</tr>
+<tr>
+<td><img alt="ワープ変形" src="../../../../img/basic/window/25_transformtool.png" /></td>
+<td>ワープ変形</td>
+<td>レイヤーや選択範囲やパスに対し、空間的な歪みを与える</td>
+</tr>
+<tr>
+<td><img alt="ケージ変形" src="../../../../img/basic/window/26_transformtool.png" /></td>
+<td>ケージ変形</td>
+<td>変形したい範囲をケージで囲い、自由に変形する</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>変形ツールの多くは、その対象をツールボックス下部の <code>変形対象</code> または <code>移動対象</code> で選択します。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>これらのツールは、メニューバー <code>ツール</code> &gt; <code>変形ツール</code> 配下の一覧からも選択できます。</p>
+</div>
+<h2 id="_5">その他のツール</h2>
+<p><strong>その他のツール</strong>は、選択ツール、描画ツール、変形ツールに含まれなかった残りのツール全てです。</p>
+<ul>
+<li>パス</li>
+<li>テキスト</li>
+<li>スポイト</li>
+<li>定規</li>
+<li>ズーム</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../windows/" class="btn btn-neutral float-left" title="主なウィンドウ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../imagewindow/" class="btn btn-neutral float-right" title="画像ウィンドウ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../windows/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../imagewindow/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../js/custom.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

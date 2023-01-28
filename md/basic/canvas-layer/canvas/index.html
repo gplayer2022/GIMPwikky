@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30ad\u30e3\u30f3\u30d0\u30b9";
+        var mkdocs_page_input_path = "md\\basic\\canvas-layer\\canvas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">キャンバスとレイヤー</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">キャンバス</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>基本編 &raquo;</li>
+          <li>キャンバスとレイヤー &raquo;</li>
+      <li>キャンバス</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">キャンバス</h1>
+<p>画像ファイルをインポートした場合、 GIMP はインポートされた画像を 1 枚の<strong>レイヤー</strong>として土台となる<strong>キャンバス</strong>上に展開します。</p>
+<p>ドッグ下部のレイヤーダイアログで <code>保護</code> 列にある目のマークを押下して消し、すべてのレイヤーを非表示にすると格子模様の土台が現れます。</p>
+<p><img alt="保護" src="../../../../img/basic/canvas-layer/02_layer.png" /></p>
+<p>この土台がキャンバスです。</p>
+<p><img alt="キャンバス" src="../../../../img/basic/canvas-layer/03_canvas.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>キャンバスはメニュー <code>画像</code> &gt; <code>キャンバスサイズの変更</code> やメニュー <code>画像</code> &gt; <code>キャンバスをレイヤーに合わせる</code> などでサイズの変更ができます。 </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>変形ツールの <code>切り抜き</code> で画像の一部を切り抜いた場合、レイヤーは保持されたままでキャンバスサイズが変更されます。</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../im-export/export/" class="btn btn-neutral float-left" title="エクスポートと保存"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../layer/" class="btn btn-neutral float-right" title="レイヤー">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../im-export/export/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../layer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../js/custom.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

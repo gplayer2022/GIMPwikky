@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u753b\u50cf\u306e\u4e00\u90e8\u3092\u5207\u308a\u53d6\u308a\u3001\u4e2d\u592e\u306b\u914d\u7f6e\u3059\u308b";
+        var mkdocs_page_input_path = "md\\reverse\\trimming.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../basic/canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">画像の一部を切り取り、中央に配置する</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">選択ツールで切り取り対象を選択</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">選択範囲のコピーと貼り付け</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">切り取り対象の移動</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">背景の作成</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>逆引き &raquo;</li>
+      <li>画像の一部を切り取り、中央に配置する</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">画像の一部を切り取り、中央に配置する</h1>
+<p>画像の一部を切り取り、中央に配置します。
+以下では、切り取る画像部分を<strong>切り取り対象</strong>と呼びます。
+画像サイズは変更しません。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここでは例として、画像中のフクロウを切り取って中央に配置します。</p>
+</div>
+<div class="diff">
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更前</figcaption>
+      <img src="../../../img/resize/12_trimming.png" alt="変更前">
+    </figure>
+  </div>
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更後</figcaption>
+      <img src="../../../img/resize/08_trimming.png" alt="変更後">
+    </figure>
+  </div>
+</div>
+
+<h2 id="_2">選択ツールで切り取り対象を選択</h2>
+<p>選択ツールで切り取り対象を選択します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>背景色が単一色であるよう場合、選択ツールは <strong>自由選択</strong> や <strong>電脳はさみ</strong> を使えばよいでしょう。
+ここでは自由選択で切り取っています。<br />
+また、画像の背景が複雑な場合、選択ツールは <strong>前景抽出選択</strong> などの方がよいかもしれません。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>自由選択</strong> は、ツールボックス下部のオプションで <code>なめらかに</code> と <code>境界をぼかす</code> が選択できます。
+状況に応じてチェックの有無を変更してください。</p>
+</div>
+<p><img alt="切り取り" src="../../../img/resize/09_trimming.png" /></p>
+<p>切り取り対象を囲った後、内部をダブルクリックするか、 <code>Enter</code> キーを押下することで、選択が確定します。
+選択が確定すると、選択範囲が<u>白と黒の動く破線で囲まれます</u>。</p>
+<h2 id="_3">選択範囲のコピーと貼り付け</h2>
+<p>選択範囲を以下の手順でコピーし、貼り付けます。</p>
+<ol>
+<li>メニュー <code>編集</code> &gt; <code>コピー</code> を選択</li>
+<li>メニュー <code>編集</code> &gt; <code>貼り付け</code> を選択</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>ショートカットキーを使えば、コピーは <code>Ctrl</code> + <code>C</code> で、貼り付けは <code>Ctrl</code> + <code>V</code> で可能です。</p>
+</div>
+<p>画像には一見変化がありませんが、ドックのレイヤーダイアログを見ると、 <code>フローティング選択範囲</code> という新しいレイヤーが発生しています。</p>
+<p><img alt="フローティング選択範囲" src="../../../img/resize/15_trimming.png" /></p>
+<p>レイヤーダイアログの <code>フローティング選択範囲</code> を右クリックし、コンテキストメニューから <code>新しいレイヤーの生成</code> を選択します。</p>
+<p>レイヤーダイアログで元画像のレイヤーを非表示にすれば、切り取り対象が貼り付けられていることを確認できます。
+レイヤーを非表示にするには、非表示にしたいレイヤーの <code>保護</code> 列にある目玉のアイコンをクリックします。</p>
+<p><img alt="フローティング選択範囲" src="../../../img/resize/10_trimming.png" /></p>
+<h2 id="_4">切り取り対象の移動</h2>
+<p>切り取り対象をキャンバスの中央に配置します。</p>
+<p>移動する前に、切り取り対象のあるレイヤーを<strong>焦点レイヤー</strong>にする必要があります。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>GIMP のヘルプでは、焦点レイヤーは <strong>focused layer</strong> （未翻訳）となっています。</p>
+</div>
+<ol>
+<li>レイヤーダイアログで切り取り対象のレイヤーを選択し、活性レイヤーにする</li>
+<li>ツールボックスから変形ツールのひとつ <code>整列</code> を選択</li>
+<li>画像ウィンドウで直接切り取り対象をクリックし、<strong>焦点レイヤー</strong>にする</li>
+</ol>
+<p>焦点レイヤーになると、レイヤーの四隅に小さな四角形が現れます。</p>
+<p><img alt="焦点レイヤー" src="../../../img/resize/14_trimming.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>活性レイヤーであるだけでは、変形ツール <code>整列</code> で移動できません。</p>
+</div>
+<p>ツールボックス下部のオプションで位置合わせを行います。</p>
+<ol>
+<li><code>位置合わせ</code> &gt; <code>整列</code> &gt; <code>中央揃え(水平方向の)</code> を押下</li>
+<li><code>位置合わせ</code> &gt; <code>整列</code> &gt; <code>中央揃え(垂直方向の)</code> を押下</li>
+</ol>
+<p><img alt="整列" src="../../../img/resize/13_trimming.png" /></p>
+<p>切り取り対象がキャンバスの中央に配置されます。</p>
+<h2 id="_5">背景の作成</h2>
+<p>元の背景色を <code>スポイト</code> で抽出し、背景専用のレイヤーを作成します。</p>
+<p>まずは下記の手順で、新しいレイヤーを作るための背景色を取得します。</p>
+<ol>
+<li>ツールボックスで <code>スポイト</code> を選択</li>
+<li>ツールボックス下部のオプションで <code>スポイト対象</code> を <code>背景色に設定</code> にする</li>
+<li>画像ウィンドウで背景色をスポイトする</li>
+</ol>
+<p>背景色が設定されます。</p>
+<p><img alt="背景色" src="../../../img/resize/07_trimming.png" /></p>
+<p>下記の手順で新しいレイヤーを作成します。</p>
+<ol>
+<li>メニュー <code>レイヤー</code> &gt; <code>新しいレイヤーの追加</code> を選択</li>
+<li>ウィンドウ <code>新しいレイヤー</code> で <code>塗りつぶし色</code> を <code>背景色</code> にする</li>
+<li>ドック下部のレイヤーダイアログで、新しく作成したレイヤーを切り取り対象のレイヤーより後ろにする</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>ウィンドウ <code>新しいレイヤー</code> は、レイヤーダイアログ下部の小さなアイコンを押下しても開くことができます。</p>
+</div>
+<p>完成です。</p>
+<p><img alt="完成" src="../../../img/resize/08_trimming.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../resize/" class="btn btn-neutral float-left" title="画像サイズを変更し、中央に配置する"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../etc/capture/" class="btn btn-neutral float-right" title="デスクトップのスクリーンショット">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../resize/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../etc/capture/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/custom.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
