@@ -14,8 +14,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u753b\u50cf\u306e\u4e00\u90e8\u3092\u5207\u308a\u53d6\u308a\u3001\u4e2d\u592e\u306b\u914d\u7f6e\u3059\u308b";
-        var mkdocs_page_input_path = "md\\reverse\\trimming.md";
+        var mkdocs_page_name = "\u753b\u50cf\u306e\u4e00\u90e8\u3092\u6d88\u3059";
+        var mkdocs_page_input_path = "md\\reverse\\delete.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -94,19 +94,17 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../resize/">画像サイズを変更し、中央に配置する</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">画像の一部を切り取り、中央に配置する</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">画像の一部を消す</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_2">選択ツールで切り取り対象を選択</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">選択ツールで削除対象を選択</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_3">選択範囲のコピーと貼り付け</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">選択範囲を塗りつぶす</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_4">切り取り対象の移動</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_5">背景の作成</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">細部を修正する</a>
     </li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../delete/">画像の一部を消す</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
@@ -136,7 +134,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>逆引き &raquo;</li>
-      <li>画像の一部を切り取り、中央に配置する</li>
+      <li>画像の一部を消す</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -145,114 +143,114 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1">画像の一部を切り取り、中央に配置する</h1>
-<p>画像の一部を切り取り、中央に配置します。
-以下では、切り取る画像部分を<strong>切り取り対象</strong>と呼びます。
-画像サイズは変更しません。</p>
+                <h1 id="_1">画像の一部を消す</h1>
+<p>画像の一部を消して、背景色で塗りつぶします。
+ここでは消す画像部分を<strong>削除対象</strong>と呼びます。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>ここでは例として、画像中のフクロウを切り取って中央に配置します。</p>
+<p>ここでは、例として発煙筒の火を消してみます。</p>
 </div>
 <div class="diff">
   <div class="diff-inner">
     <figure>
       <figcaption>変更前</figcaption>
-      <img src="../../../img/resize/12_trimming.png" alt="変更前">
+      <img src="../../../img/reverse/06_delete.png" alt="変更前">
     </figure>
   </div>
   <div class="diff-inner">
     <figure>
       <figcaption>変更後</figcaption>
-      <img src="../../../img/resize/08_trimming.png" alt="変更後">
+      <img src="../../../img/reverse/01_delete.png" alt="変更後">
     </figure>
   </div>
 </div>
 
-<h2 id="_2">選択ツールで切り取り対象を選択</h2>
-<p>選択ツールで切り取り対象を選択します。</p>
+<h2 id="_2">選択ツールで削除対象を選択</h2>
+<p>選択ツールで削除対象を選択します。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>背景色が単一色であるよう場合、選択ツールは <strong>自由選択</strong> や <strong>電脳はさみ</strong> を使えばよいでしょう。
-ここでは自由選択で切り取っています。<br />
-また、画像の背景が複雑な場合、選択ツールは <strong>前景抽出選択</strong> などの方がよいかもしれません。</p>
+電脳はさみはある程度境界線を自動で検知してくれます。
+ここではその必要がないので、自由選択で切り取っています。  </p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>自由選択</strong> は、ツールボックス下部のオプションで <code>なめらかに</code> と <code>境界をぼかす</code> が選択できます。
 状況に応じてチェックの有無を変更してください。</p>
 </div>
-<p><img alt="切り取り" src="../../../img/resize/09_trimming.png" /></p>
+<p><img alt="切り取り" src="../../../img/reverse/02_delete.png" /></p>
 <p>切り取り対象を囲った後、内部をダブルクリックするか、 <code>Enter</code> キーを押下することで、選択が確定します。
 選択が確定すると、選択範囲が<u>白と黒の動く破線で囲まれます</u>。</p>
-<h2 id="_3">選択範囲のコピーと貼り付け</h2>
-<p>選択範囲を以下の手順でコピーし、貼り付けます。</p>
-<ol>
-<li>メニュー <code>編集</code> &gt; <code>コピー</code> を選択</li>
-<li>メニュー <code>編集</code> &gt; <code>貼り付け</code> を選択</li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>ショートカットキーを使えば、コピーは <code>Ctrl</code> + <code>C</code> で、貼り付けは <code>Ctrl</code> + <code>V</code> で可能です。</p>
-</div>
-<p>画像には一見変化がありませんが、ドックのレイヤーダイアログを見ると、 <code>フローティング選択範囲</code> という新しいレイヤーが発生しています。</p>
-<p><img alt="フローティング選択範囲" src="../../../img/resize/15_trimming.png" /></p>
-<p>レイヤーダイアログの <code>フローティング選択範囲</code> を右クリックし、コンテキストメニューから <code>新しいレイヤーの生成</code> を選択します。</p>
-<p>レイヤーダイアログで元画像のレイヤーを非表示にすれば、切り取り対象が貼り付けられていることを確認できます。
-レイヤーを非表示にするには、非表示にしたいレイヤーの <code>保護</code> 列にある目玉のアイコンをクリックします。</p>
-<p><img alt="フローティング選択範囲" src="../../../img/resize/10_trimming.png" /></p>
-<h2 id="_4">切り取り対象の移動</h2>
-<p>切り取り対象をキャンバスの中央に配置します。</p>
-<p>移動する前に、切り取り対象のあるレイヤーを<strong>焦点レイヤー</strong>にする必要があります。</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>GIMP のヘルプでは、焦点レイヤーは <strong>focused layer</strong> （未翻訳）となっています。</p>
-</div>
-<ol>
-<li>レイヤーダイアログで切り取り対象のレイヤーを選択し、活性レイヤーにする</li>
-<li>ツールボックスから変形ツールのひとつ <code>整列</code> を選択</li>
-<li>画像ウィンドウで直接切り取り対象をクリックし、<strong>焦点レイヤー</strong>にする</li>
-</ol>
-<p>焦点レイヤーになると、レイヤーの四隅に小さな四角形が現れます。</p>
-<p><img alt="焦点レイヤー" src="../../../img/resize/14_trimming.png" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>活性レイヤーであるだけでは、変形ツール <code>整列</code> で移動できません。</p>
-</div>
-<p>ツールボックス下部のオプションで位置合わせを行います。</p>
-<ol>
-<li><code>位置合わせ</code> &gt; <code>整列</code> &gt; <code>中央揃え(水平方向の)</code> を押下</li>
-<li><code>位置合わせ</code> &gt; <code>整列</code> &gt; <code>中央揃え(垂直方向の)</code> を押下</li>
-</ol>
-<p><img alt="整列" src="../../../img/resize/13_trimming.png" /></p>
-<p>切り取り対象がキャンバスの中央に配置されます。</p>
-<h2 id="_5">背景の作成</h2>
-<p>元の背景色を <code>スポイト</code> で抽出し、背景専用のレイヤーを作成します。</p>
-<p>まずは下記の手順で、新しいレイヤーを作るための背景色を取得します。</p>
+<h2 id="_3">選択範囲を塗りつぶす</h2>
+<p>選択範囲を背景色で塗りつぶします。
+まず背景色をツール <code>スポイト</code> で取得し、その後、選択範囲を描画ツール <code>塗りつぶし</code> で塗りつぶします。</p>
+<p>ツール <code>スポイト</code> で色を取得する手順です。</p>
 <ol>
 <li>ツールボックスで <code>スポイト</code> を選択</li>
-<li>ツールボックス下部のオプションで <code>スポイト対象</code> を <code>背景色に設定</code> にする</li>
+<li>ツールボックス下部のオプションで <code>スポイト対象</code> を <code>描画色に設定</code> にする</li>
 <li>画像ウィンドウで背景色をスポイトする</li>
 </ol>
-<p>背景色が設定されます。</p>
-<p><img alt="背景色" src="../../../img/resize/07_trimming.png" /></p>
-<p>下記の手順で新しいレイヤーを作成します。</p>
+<p>描画色が設定されます。</p>
+<p><img alt="描画色" src="../../../img/reverse/07_delete.png" /></p>
+<p>続いて、選択範囲を描画ツール <code>塗りつぶし</code> で塗りつぶします。</p>
 <ol>
-<li>メニュー <code>レイヤー</code> &gt; <code>新しいレイヤーの追加</code> を選択</li>
-<li>ウィンドウ <code>新しいレイヤー</code> で <code>塗りつぶし色</code> を <code>背景色</code> にする</li>
-<li>ドック下部のレイヤーダイアログで、新しく作成したレイヤーを切り取り対象のレイヤーより後ろにする</li>
+<li>ツールボックスで <code>塗りつぶし</code> を選択</li>
+<li>選択範囲内をクリック</li>
+</ol>
+<p>塗りつぶされます。</p>
+<p><img alt="塗りつぶし" src="../../../img/reverse/03_delete.png" /></p>
+<p>ここで選択範囲を解除しておきます。</p>
+<ol>
+<li>画像ウィンドウで右クリック</li>
+<li>コンテキストメニューから <code>選択</code> &gt; <code>選択を解除</code> を選択</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>次の作業で描画ツール <code>修正ブラシ</code> を使います。
+選択範囲を解除しておかなければ、思い通りの場所を修正できません。</p>
+</div>
+<h2 id="_4">細部を修正する</h2>
+<p>描画ツール <code>修正ブラシ</code> で、切り取った跡の細部を修正します。</p>
+<div class="diff">
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更前</figcaption>
+      <img src="../../../img/reverse/05_delete.png" alt="変更前">
+    </figure>
+  </div>
+  <div class="diff-inner">
+    <figure>
+      <figcaption>変更後</figcaption>
+      <img src="../../../img/reverse/04_delete.png" alt="変更後">
+    </figure>
+  </div>
+</div>
+
+<p>細部を修正するため、予めツールボックスの <code>ズーム</code> を使って適度に拡大しておきます。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>キー <code>Ctrl</code> を押下しながらマウスのホイールを回転させることでも、拡大・縮小ができます。</p>
+</div>
+<p>修正手順です。</p>
+<ol>
+<li>ツールボックスから <code>修正ブラシ</code> を選択</li>
+<li>ツールボックス下部のオプションで <code>ブラシ</code> や <code>サイズ</code> を調整</li>
+<li>修正に利用したい画素辺りをキー <code>Ctrl</code> を押下しながらクリックし、 <code>参照元</code> として設定</li>
+<li>修正箇所をドラッグして修正</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>ウィンドウ <code>新しいレイヤー</code> は、レイヤーダイアログ下部の小さなアイコンを押下しても開くことができます。</p>
+<p>描画ツール <code>修正ブラシ</code> は、指定された <code>参照元</code> から修正箇所に画素を転写します。
+GIMP のヘルプによれば、 <code>修正ブラシ</code> による転写は、「修復箇所への単純な画素（ピクセル）転写ではなく、修復箇所の周辺の画素情報までも考慮した転写」を行っています。</p>
 </div>
 <p>完成です。</p>
-<p><img alt="完成" src="../../../img/resize/08_trimming.png" /></p>
+<p><img alt="完成" src="../../../img/reverse/01_delete.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../resize/" class="btn btn-neutral float-left" title="画像サイズを変更し、中央に配置する"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../delete/" class="btn btn-neutral float-right" title="画像の一部を消す">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../trimming/" class="btn btn-neutral float-left" title="画像の一部を切り取り、中央に配置する"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../etc/capture/" class="btn btn-neutral float-right" title="デスクトップのスクリーンショット">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -276,10 +274,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../resize/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../trimming/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../etc/capture/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
