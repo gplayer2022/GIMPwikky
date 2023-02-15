@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30d1\u30b9\u306e\u4f5c\u6210\u3068\u7de8\u96c6";
+        var mkdocs_page_input_path = "md\\medium\\path\\edit.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQMLM5VY5S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQMLM5VY5S');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">中級編</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">パス</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../summary/">パスの概要</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">パスの作成と編集</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#_2">パスの編集モード</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_3">作成</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_8">編集</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_11">移動</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_12">用語一覧</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../path2layer/">パスからレイヤーへ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../layer2path/">レイヤーからパスへ</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/delete/">画像の一部を消す</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>中級編 &raquo;</li>
+          <li>パス &raquo;</li>
+      <li>パスの作成と編集</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">パスの作成と編集</h1>
+<p>パスの各部の名称は下記の通りです。</p>
+<p><img alt="パス各部の名称" src="../../../../img/medium/path/04_paths.png" /></p>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アンカー</td>
+<td>パス作成時にマウスでクリックされた各点</td>
+</tr>
+<tr>
+<td>分節</td>
+<td>アンカー間の直線や曲線</td>
+</tr>
+<tr>
+<td>ハンドル</td>
+<td>分節を曲げるための操作用の取っ手</td>
+</tr>
+<tr>
+<td>コンポーネント</td>
+<td>直結されていない各パス</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>GIMP のヘルプは、必ずしもパス各部の名称を定義した上で使用しているわけではありません。
+またヘルプでは、一部、同じものに対して 2 通り以上の名称で呼んでいるように見える部分もあります。
+例えば<strong>アンカー</strong>は、<strong>コントロールポイント</strong>や <strong>node</strong> （未翻訳部分）とも呼ばれています。<br />
+ここに紹介するパス各部の名称は、ヘルプの文脈から推測して比較的妥当だと判断したものを基にしています。</p>
+</div>
+<h2 id="_2">パスの編集モード</h2>
+<p>パスツールを利用して新たなパスを作成するには、左パネル上部のツールボックスから <code>パス</code> を選択します。</p>
+<p>パスツールには 3 つの<strong>編集モード</strong>があります。</p>
+<ul>
+<li>作成</li>
+<li>編集</li>
+<li>移動</li>
+</ul>
+<p>ツールボックスで <code>パス</code> が選択されている場合、下部のツールオプションで現在の編集モードを確認および変更できます。</p>
+<p>編集モードは、ツールオプションのラジオボタンを選択することで変更できるほか、 <code>Ctrl</code> キーや <code>Alt</code> キーを押下することでも可能です。</p>
+<p><img alt="パスツール" src="../../../../img/medium/path/05_paths-tool.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code>Ctrl</code> キーや <code>Alt</code> キーを押下して編集モードを切り替えた場合、キーを離すと元の編集モードに戻ります。</p>
+</div>
+<p>パスの操作中は、いずれの編集モードにおいても、画像ウィンドウ下部のメッセージ欄で基本的な操作を確認できます。
+メッセージ欄を確認しながら操作するとよいでしょう。</p>
+<p><img alt="メッセージ欄" src="../../../../img/medium/path/06_paths-tool.png" /></p>
+<h3 id="_3">作成</h3>
+<p>パスツールのデフォルトの編集モードは <code>作成</code> です。
+<code>作成</code> になっていない場合、ツールボックス下部のツールオプションから変更できます。</p>
+<h4 id="_4">曲線を描く</h4>
+<p>左クリックすることで、最初の<strong>アンカー</strong>を配置することができます。</p>
+<p><img alt="アンカー" src="../../../../img/medium/path/07_path.png" /></p>
+<p>最初のアンカーを配置すると、マウスカーソルがアンカー以外の場所にのせられている場合、画像ウィンドウ下部のメッセージ欄には下記のように表示されます。</p>
+<blockquote>
+<p>クリック-ドラッグ: 新しいアンカーを作成します (Shift もできます)</p>
+</blockquote>
+<p>メッセージ通りに次のアンカーを配置したい場所をクリックしてからそのままドラッグすると、自動的に<strong>ハンドル</strong>が引き出され、曲線を描くことができます。
+曲線が思い通りの状態になったら、クリックを離します。</p>
+<p><img alt="曲線" src="../../../../img/medium/path/08_path.png" /></p>
+<p>同様に次のアンカーを指定していくことで、新しい曲線をつなげていくことができます。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>ハンドルを操作することで、後から曲線を調整することもできます。</p>
+</div>
+<h4 id="_5">直線を描く</h4>
+<p>左クリックすることで、最初の<strong>アンカー</strong>を配置します。</p>
+<p><img alt="アンカー" src="../../../../img/medium/path/07_path.png" /></p>
+<p>次のアンカーを配置したい場所をクリックして、そのまま離します。
+アンカー間に直線が描かれます。</p>
+<p><img alt="直線" src="../../../../img/medium/path/09_path.png" /></p>
+<p>同様に次のアンカーを指定していくことで、新しい直線をつなげていくことができます。</p>
+<h4 id="_6">新規コンポーネントを描く</h4>
+<p>すでにパスが描かれている場合、画像ウィンドウ下部のメッセージ欄には下記のように表示されています。</p>
+<blockquote>
+<p>クリック-ドラッグ: 新しいアンカーを作成します (Shift もできます)</p>
+</blockquote>
+<p>カッコ内の案内に従い <code>Shift</code> を押下すると、メッセージは下記のように変わります。</p>
+<blockquote>
+<p>クリック: パスの新しいコンポーネントを作成します</p>
+</blockquote>
+<p>そのまま次のアンカーを配置すると、そのアンカーは直前のアンカーとは連結されず、新規<strong>コンポーネント</strong>の最初のアンカーとして配置されます。</p>
+<p><img alt="コンポーネント" src="../../../../img/medium/path/10_path.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>複数のコンポーネントは、それぞれ独立に移動させることができます。
+ただし、パスを元にした描画は、すべてのコンポーネントで一括動作します。</p>
+</div>
+<h4 id="_7">パスの確認</h4>
+<p>右カラムのドック下部でタブ <code>パス</code> を選択すると、<strong>パスダイアログ</strong>を開くことができます。
+作成されたパスはここに一覧表示され、パスごとに名前を付けることもできます。</p>
+<p><img alt="パスダイアログ" src="../../../../img/medium/path/11_path.png" /></p>
+<p><u>パスを作成した後で他の作業をすると、画像ウィンドウ上からはパスが消えます</u>。
+パスを作成した後は、必ずパスダイアログでパスが作成されたことを確認し、後で何のパスだったか分かるように名前を変更しておきましょう。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>画像ウィンドウからパスが消えたように見えても、パスダイアログに存在するパスは、再度表示させて確認したり、再編集したりすることができます。
+一覧から、再編集したいパス上で右クリックし、 <code>パスの編集</code> を選択します。
+これで、画像ウィンドウ上にパスが再度表示されます。</p>
+</div>
+<h3 id="_8">編集</h3>
+<p>ツールボックス下部のツールオプションでラジオボタンから <code>編集</code> を選択することで編集モードを <code>編集</code> に変更できます。
+編集モードが <code>作成</code> の状態でキー <code>Ctrl</code> を押下しても、 <code>編集</code> に切り替えることができます。</p>
+<p><img alt="編集" src="../../../../img/medium/path/14_mode.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>キー <code>Ctrl</code> 押下中のみ <code>編集</code> に切り替わり、離すと元に戻ります。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここではもっぱらキー <code>Ctrl</code> 押下で操作するものとします。
+ツールオプションでラジオボタンから <code>編集</code> を選択した上で作業する場合は、以下の記述でキー <code>Ctrl</code> 押下を無視してください。</p>
+</div>
+<p>編集モードを <code>編集</code> に切り替えることで、パスを閉じたり、アンカーを削除したりすることができます。</p>
+<h4 id="_9">パスを閉じる</h4>
+<p>適切に配置された 2 つ以上のアンカーがあれば、パスを閉じることができます。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>アンカーが 2 つの場合、分節を曲線にすると閉じた様子がよく分かります。
+分節が直線の場合、分節同士が重なってしまい、閉じているのかどうかの判別が難しくなります。
+以下では 3 つのアンカーで説明していきます。</p>
+</div>
+<p>下図のように 1 から 3 までアンカーを配置していった後で、最初のアンカーに戻って三角形を作るものとします。</p>
+<p><img alt="パスを閉じる" src="../../../../img/medium/path/12_path.png" /></p>
+<p>開始したアンカー上でキー <code>Ctrl</code> を押下すると、画像ウィンドウ下部に下記のようなメッセージが表示されます。</p>
+<blockquote>
+<p>クリック: このアンカーと選択した拠点を接続します</p>
+</blockquote>
+<p>最後に配置したアンカーが選択されている状態なので、 <code>Ctrl</code> を押下したまま開始点のアンカーをクリックすると、パスが閉じて三角形ができあがります。</p>
+<p><img alt="三角形" src="../../../../img/medium/path/13_path.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>閉じていない 2 つのコンポーネントは、端点同士を接続することで 1 つのコンポーネントにすることができます。<br />
+まず、 1 つめのコンポーネントから、分節を 1 つしか持っていないアンカーをクリックして選択状態にします。
+続いて 2 つめのコンポーネントから、やはり分節を 1 つしか持っていないアンカーを <code>Ctrl</code> を押下しながらクリックします。
+これで 2 つのコンポーネントが接続されます。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><u>1 つのアンカーは、最小で 0 、最大で 2 つの分節しか持つことができません</u>。したがって、閉じたコンポーネント同士を接続することはできません。</p>
+</div>
+<p>パスを閉じた後で新たにアンカーを配置すると、自動的に新規コンポーネントの最初のアンカーになります。</p>
+<h4 id="_10">アンカーの削除</h4>
+<p>カーソルがアンカー上にある状態で <code>Ctrl</code> + <code>Shift</code> を押下すると、画像ウィンドウ下部のメッセージが下記のように変化します。</p>
+<blockquote>
+<p>クリック: このアンカーを削除します</p>
+</blockquote>
+<p>メッセージにしたがってクリックすると、アンカーが削除されます。</p>
+<h3 id="_11">移動</h3>
+<p>ツールボックス下部のツールオプションでラジオボタンから <code>移動</code> を選択することで編集モードを <code>移動</code> に変更できます。
+編集モードが <code>作成</code> の状態でキー <code>Alt</code> を押下しても、 <code>移動</code> に切り替えることができます。</p>
+<p><img alt="移動" src="../../../../img/medium/path/15_mode.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>キー <code>Alt</code> 押下中のみ <code>移動</code> に切り替わり、離すと元に戻ります。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここではもっぱらキー <code>Alt</code> 押下で操作するものとします。
+ツールオプションでラジオボタンから <code>移動</code> を選択した上で作業する場合は、以下の記述でキー <code>Alt</code> 押下を無視してください。</p>
+</div>
+<p>キー <code>Alt</code> を押下すると、画像ウィンドウ下部のメッセージは次のように変わります。</p>
+<blockquote>
+<p>クリック-ドラッグ: パスを移動します (Shift もできます)</p>
+</blockquote>
+<p>キー <code>Alt</code> を押下しながらパスを選択しドラッグすると、単一のコンポーネントを移動できます。</p>
+<p><img alt="移動" src="../../../../img/medium/path/16_path.png" /></p>
+<p>キー <code>Alt</code> を押下した状態で、さらにキー <code>Shift</code> を押下しながらパスを選択しドラッグすると、すべてのコンポーネントを一斉に移動することができます。</p>
+<h2 id="_12">用語一覧</h2>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>英語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>パスツール</td>
+<td>paths tool</td>
+<td>パスの編集や作成を行う</td>
+</tr>
+<tr>
+<td>アンカー</td>
+<td>anchor</td>
+<td>パス作成時にマウスでクリックされた各点</td>
+</tr>
+<tr>
+<td>コントロールポイント</td>
+<td>control point</td>
+<td>おそらくアンカーに同じ</td>
+</tr>
+<tr>
+<td>ノード</td>
+<td>node</td>
+<td>おそらくアンカーに同じ</td>
+</tr>
+<tr>
+<td>分節</td>
+<td>segment</td>
+<td>アンカー間の直線や曲線</td>
+</tr>
+<tr>
+<td>ハンドル</td>
+<td>handle</td>
+<td>分節を曲げるための操作用の取っ手</td>
+</tr>
+<tr>
+<td>コンポーネント</td>
+<td>component</td>
+<td>直結されていない各パス</td>
+</tr>
+<tr>
+<td>サブパス</td>
+<td>subpath</td>
+<td>コンポーネントに同じ</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../summary/" class="btn btn-neutral float-left" title="パスの概要"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../path2layer/" class="btn btn-neutral float-right" title="パスからレイヤーへ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../summary/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../path2layer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

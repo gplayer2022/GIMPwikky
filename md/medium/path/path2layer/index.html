@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30d1\u30b9\u304b\u3089\u30ec\u30a4\u30e4\u30fc\u3078";
+        var mkdocs_page_input_path = "md\\medium\\path\\path2layer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQMLM5VY5S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQMLM5VY5S');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">中級編</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">パス</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../summary/">パスの概要</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../edit/">パスの作成と編集</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">パスからレイヤーへ</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#_2">パスを選択範囲に</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">パスを塗りつぶす</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">パスの境界線を描画</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_5">線スタイルを設定して描く</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_6">描画ツールを用いて描く</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">用語一覧</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../layer2path/">レイヤーからパスへ</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/delete/">画像の一部を消す</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>中級編 &raquo;</li>
+          <li>パス &raquo;</li>
+      <li>パスからレイヤーへ</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">パスからレイヤーへ</h1>
+<p>一度パスを作成すると、ツールボックス下部のツールオプションから、活性レイヤーに対して以下の操作を実行できます。</p>
+<ul>
+<li>パスを選択範囲に</li>
+<li>パスを塗りつぶす</li>
+<li>パスの境界線を描画</li>
+</ul>
+<p><img alt="ツールオプション" src="../../../../img/medium/path/17_path2layer.png" /></p>
+<p>以下では順次、上記の操作について解説していきます。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>いずれの操作についても、操作前に操作対象にしたいレイヤーをレイヤーダイアログで選択し、活性レイヤーにしておく必要があります。<br />
+また<u>既存の選択範囲が存在する場合、特別な事情がない限り、予め選択を解除しておく</u>必要があります。
+選択を解除するには、右クリックで開くコンテキストメニューから <code>選択</code> &gt; <code>選択を解除</code> を実行します。</p>
+</div>
+<h2 id="_2">パスを選択範囲に</h2>
+<p>パスはすでに作成してあり、ツールボックスでアイコン <code>パス</code> が選択されているものとします。</p>
+<p><img alt="パス" src="../../../../img/medium/path/19_path2layer.png" /></p>
+<p>パスを使って<strong>選択範囲</strong>を作成したいレイヤーを、ドック内のレイヤーダイアログで選択します。</p>
+<p><img alt="レイヤー選択" src="../../../../img/medium/path/18_path2layer.png" /></p>
+<p>ツールボックス下部のツールオプションから、ボタン <code>パスを選択範囲に</code> を押下します。</p>
+<p>活性レイヤーに選択範囲が作成されます。</p>
+<p><img alt="選択範囲" src="../../../../img/medium/path/20_path2layer.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>上記手順でレイヤー <code>背景</code> が選択されていた場合、一見、レイヤー <code>前景</code> に選択範囲が作成されたように見えるかもしれません。しかし実際には背景に選択範囲が作成されているため、この後、選択範囲を使って何か作業をしようとしても、思うように操作できない可能性があります。</p>
+</div>
+<h2 id="_3">パスを塗りつぶす</h2>
+<p>パスはすでに作成してあり、ツールボックスでアイコン <code>パス</code> が選択されているものとします。</p>
+<p><img alt="パス" src="../../../../img/medium/path/21_path2layer.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここでは 2 つのコンポーネントからなるパスを作成しています。
+1 つは閉じた図形で、もう 1 つは開いた図形です。</p>
+</div>
+<p>パスを使って塗りつぶしたいレイヤーを、ドック内のレイヤーダイアログで選択します。</p>
+<p>ツールボックス下部のツールオプションから、ボタン <code>パスを塗りつぶす</code> を押下します。</p>
+<p>活性レイヤー上で、パスで区切られた領域が塗りつぶされます。</p>
+<p><img alt="パス" src="../../../../img/medium/path/22_path2layer.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>開いたコンポーネントは、開始端となるアンカーと終了端となるアンカーが見えない直線で結合されたかのような状態で、閉じた領域が塗りつぶされます。</p>
+</div>
+<h2 id="_4">パスの境界線を描画</h2>
+<p>パスの分節に沿って線を描くことができます。描画には、線スタイルを設定して描く方法と<strong>描画ツール</strong>を用いて描く方法があります。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>この場合も、操作前に操作対象にしたいレイヤーをレイヤーダイアログで選択し、活性レイヤーにしておく必要があります。</p>
+</div>
+<p>ツールボックス下部のツールオプションから、ボタン <code>パスの境界線を描画</code> を押下すると、ウィンドウ <code>パスの境界線を描画</code> が開かれます。ラジオボタンで <code>線スタイルを設定して描画</code> するか <code>描画ツールを使用</code> するかを選択します。またそれぞれの項目には、いくつかのオプションが存在します。</p>
+<p><img alt="パスの境界線を描画" src="../../../../img/medium/path/29_drawpath.png" /></p>
+<h3 id="_5">線スタイルを設定して描く</h3>
+<p>線スタイルを設定して描画する場合、予めツールボックスで<strong>描画色</strong>を指定しておきます。</p>
+<p><img alt="描画色" src="../../../../img/medium/path/30_drawpath.png" /></p>
+<p>他に、線の幅を指定したり、破線や点描などの線の種類を指定することもできます。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>チェックボックス <code>アンチエイリアス</code> にチェックを入れることで、描線のギザギザを滑らかにすることができます。</p>
+</div>
+<h3 id="_6">描画ツールを用いて描く</h3>
+<p>描画ツールは、全 14 種類のうち 12 種類利用できます。
+利用できる描画ツールの一覧は下記の通りです。</p>
+<table>
+<thead>
+<tr>
+<th>アイコン</th>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="ブラシで描画" src="../../../../img/medium/path/24_drawtool.png" /></td>
+<td>ブラシで描画</td>
+<td>スムーズなタッチで描画する</td>
+</tr>
+<tr>
+<td><img alt="鉛筆で描画" src="../../../../img/medium/path/25_drawtool.png" /></td>
+<td>鉛筆で描画</td>
+<td>固いタッチで描画する</td>
+</tr>
+<tr>
+<td><img alt="エアブラシで描画" src="../../../../img/medium/path/26_drawtool.png" /></td>
+<td>エアブラシで描画</td>
+<td>圧力調整可能なエアブラシとして描画する</td>
+</tr>
+<tr>
+<td><img alt="インクで描画" src="../../../../img/medium/path/27_drawtool.png" /></td>
+<td>インクで描画</td>
+<td>カリグラフィスタイルで描画する</td>
+</tr>
+<tr>
+<td><img alt="MyPaint ブラシで描画" src="../../../../img/medium/path/28_drawtool.png" /></td>
+<td>MyPaint ブラシで描画</td>
+<td>MyPaint ブラシで描画する</td>
+</tr>
+<tr>
+<td><img alt="消しゴム" src="../../../../img/basic/window/06_painttool.png" /></td>
+<td>消しゴム</td>
+<td>描画を消して透過状態にする</td>
+</tr>
+<tr>
+<td><img alt="スタンプで描画" src="../../../../img/basic/window/07_painttool.png" /></td>
+<td>スタンプで描画</td>
+<td>スタンプソースとして指定した画像やパターンでスタンプする</td>
+</tr>
+<tr>
+<td><img alt="遠近スタンプで描画" src="../../../../img/basic/window/08_painttool.png" /></td>
+<td>遠近スタンプで描画</td>
+<td>遠近感をつけてスタンプする</td>
+</tr>
+<tr>
+<td><img alt="修復ブラシ" src="../../../../img/basic/window/09_painttool.png" /></td>
+<td>修復ブラシ</td>
+<td>画像を修復する</td>
+</tr>
+<tr>
+<td><img alt="にじみ" src="../../../../img/basic/window/10_painttool.png" /></td>
+<td>にじみ</td>
+<td>にじませる</td>
+</tr>
+<tr>
+<td><img alt="ぼかし/シャープ" src="../../../../img/basic/window/11_painttool.png" /></td>
+<td>ぼかし/シャープ</td>
+<td>ぼかしやコントラストをつける</td>
+</tr>
+<tr>
+<td><img alt="暗室" src="../../../../img/basic/window/12_painttool.png" /></td>
+<td>暗室</td>
+<td>明るさを変化させる</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>描画ツールのうち <code>塗りつぶし</code> と <code>グラデーション</code> は利用できません。</p>
+</div>
+<p>描画ツールを使って描画するには、<u>利用したい描画ツールのオプションを、予めツールボックスから当該の描画ツールを選択した上で設定しておく</u>必要があります。</p>
+<p>描画は、活性レイヤー上に、指定した描画ツールでパスをなぞるように実行されます。</p>
+<p>下図は <code>インクで描画</code> した例です。</p>
+<p><img alt="インクで描画" src="../../../../img/medium/path/31_drawpath.png" /></p>
+<h2 id="_7">用語一覧</h2>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>英語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>パス</td>
+<td>paths tool</td>
+<td>パスの編集や作成を行う</td>
+</tr>
+<tr>
+<td>レイヤー</td>
+<td>layer</td>
+<td>キャンバスの上に重ねられた、描画のための層</td>
+</tr>
+<tr>
+<td>選択範囲</td>
+<td>selection</td>
+<td>主に選択ツールで指定された範囲。白と黒の動く破線で囲まれ、切り取ったり塗りつぶしたりできるようになる</td>
+</tr>
+<tr>
+<td>描画ツール</td>
+<td>paint tools</td>
+<td>マウスポインタを使って描画したり、画像を加工したりするためのツール</td>
+</tr>
+<tr>
+<td>アンチエイリアス</td>
+<td>antialiasing</td>
+<td>描画においてギザギザを目立たなくさせる処理</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../edit/" class="btn btn-neutral float-left" title="パスの作成と編集"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../layer2path/" class="btn btn-neutral float-right" title="レイヤーからパスへ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../edit/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../layer2path/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

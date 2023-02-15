@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="patie" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+  <title>GIMPwikky</title>
+
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30ec\u30a4\u30e4\u30fc\u304b\u3089\u30d1\u30b9\u3078";
+        var mkdocs_page_input_path = "md\\medium\\path\\layer2path.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQMLM5VY5S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQMLM5VY5S');
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GIMPwikky
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">導入</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/install/">ダウンロードとインストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../intro/settings/">初期設定</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">基本編</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">ウィンドウ</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/windows/">主なウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/toolbox/">ツールボックス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/imagewindow/">画像ウィンドウ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/window/dock/">ドック</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">インポートとエクスポート</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/import/">インポートと開く</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/im-export/export/">エクスポートと保存</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">キャンバスとレイヤー</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/canvas/">キャンバス</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../basic/canvas-layer/layer/">レイヤー</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">中級編</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">パス</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../summary/">パスの概要</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../edit/">パスの作成と編集</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../path2layer/">パスからレイヤーへ</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">レイヤーからパスへ</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#_2">選択範囲をパスに変換</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">文字列をパスに変換</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">用語一覧</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">逆引き</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/simple-resize/">画像サイズを変更する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/resize/">画像サイズを変更し、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/trimming/">画像の一部を切り取り、中央に配置する</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../reverse/delete/">画像の一部を消す</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GIMP 一歩手前</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/capture/">デスクトップのスクリーンショット</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../etc/extension/">拡張子の表示</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">その他</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../links/">リンク一覧</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GIMPwikky</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>中級編 &raquo;</li>
+          <li>パス &raquo;</li>
+      <li>レイヤーからパスへ</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">レイヤーからパスへ</h1>
+<p>レイヤーの編集状態の中には、パスとして抽出可能なものもあります。
+パスはすべてのレイヤーから独立しているため、一度パスに変換してしまえば、そのパスを使って任意のレイヤー上に塗りつぶしや描画などの操作を行うことができます。</p>
+<p>ここではレイヤー上に作成した<strong>選択範囲</strong>をパスに変換する方法と、<strong>テキスト</strong>ツールで作成した文字列をパスに変換する方法を紹介します。</p>
+<h2 id="_2">選択範囲をパスに変換</h2>
+<p>レイヤー上に作成した<strong>選択範囲</strong>からパスを作成します。</p>
+<div class="diff">
+  <div class="diff-inner">
+    <figure>
+      <figcaption>選択範囲から</figcaption>
+      <img src="../../../../img/medium/path/32_layer2path.png" alt="選択範囲から">
+    </figure>
+  </div>
+  <div class="diff-inner">
+    <figure>
+      <figcaption>パスを作成</figcaption>
+      <img src="../../../../img/medium/path/34_layer2path.png" alt="パスを作成">
+    </figure>
+  </div>
+</div>
+
+<p>ツールボックスの<strong>ファジー選択</strong>ツールを使って楕円形の選択範囲を作成します。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>サンプル画像は輪郭がはっきりしているので、ツールボックス下部のツールオプションで <code>しきい値</code> を <code>0</code> に設定しています。
+なお、選択範囲の作成は、<strong>ファジー選択</strong>ツール以外のどの<strong>選択ツール</strong>で実行しても問題ありません。</p>
+</div>
+<p>選択したい範囲内をクリックすれば、同一色の範囲が選択されます。</p>
+<p><img alt="元画像" src="../../../../img/medium/path/32_layer2path.png" /></p>
+<p>右クリックして表示されたコンテキストメニューから <code>選択</code> &gt; <code>選択範囲をパスに</code> を選択します。一見何の変化もありません。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>メニューバーの <code>選択</code> &gt; <code>選択範囲をパスに</code> でも同じ操作ができます。</p>
+</div>
+<p>右パネルのドック下部で <code>パス</code> タグを選択すると、 <code>選択範囲</code> というパス名の新しいパスが作成されています。</p>
+<p><img alt="ドック" src="../../../../img/medium/path/33_layer2path.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>パスを複数作成した場合に備えて、パス名は後で見て分かる名称に変えておきましょう。</p>
+</div>
+<p>パス一覧から新規に作成されたパスの上で右クリックし、コンテキストメニューから <code>パスの編集</code> を選択します。
+パスが編集できるようになります。</p>
+<p><img alt="パス" src="../../../../img/medium/path/34_layer2path.png" /></p>
+<h2 id="_3">文字列をパスに変換</h2>
+<p><strong>テキスト</strong>ツールで作成した文字列をパスに変換します。</p>
+<p>左パネルのツールボックスからテキストツールを選択し、文字列を書きます。</p>
+<p><img alt="文字列" src="../../../../img/medium/path/36_layer2path.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>テキストツールを使って書かれた文字列は、独立したレイヤーとして管理されます。</p>
+</div>
+<p>右パネルのタブ<strong>レイヤー</strong>の一覧で、テキストのレイヤーが選択されていることを確認します。</p>
+<p>画像ウィンドウの文字列上で右クリックして、表示されたコンテキストメニューから <code>レイヤー</code> &gt; <code>テキストをパスに</code> を選択します。一見何の変化もありません。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>メニューバーの <code>レイヤー</code> &gt; <code>テキストをパスに</code> でも同じ操作ができます。</p>
+</div>
+<p>右パネルのドック下部で <code>パス</code> タグを選択すると、新しいパスを確認できます。</p>
+<p><img alt="ドック" src="../../../../img/medium/path/37_layer2path.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>パスを複数作成した場合に備えて、パス名は後で見て分かる名称に変えておきましょう。</p>
+</div>
+<p>パス一覧から新規に作成されたパスの上で右クリックし、コンテキストメニューから <code>パスの編集</code> を選択します。
+パスが編集できるようになります。</p>
+<p><img alt="パス" src="../../../../img/medium/path/38_layer2path.png" /></p>
+<h2 id="_4">用語一覧</h2>
+<table>
+<thead>
+<tr>
+<th>用語</th>
+<th>英語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>パス</td>
+<td>paths tool</td>
+<td>パスの編集や作成を行う</td>
+</tr>
+<tr>
+<td>レイヤー</td>
+<td>layer</td>
+<td>キャンバスの上に重ねられた、描画のための層</td>
+</tr>
+<tr>
+<td>選択範囲</td>
+<td>selection</td>
+<td>主に選択ツールで指定された範囲。白と黒の動く破線で囲まれ、切り取ったり塗りつぶしたりできるようになる</td>
+</tr>
+<tr>
+<td>テキスト</td>
+<td>text tool</td>
+<td>テキストレイヤーの編集作成を行う</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../path2layer/" class="btn btn-neutral float-left" title="パスからレイヤーへ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../reverse/simple-resize/" class="btn btn-neutral float-right" title="画像サイズを変更する">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>GIMPwikky &copy; 2023</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../path2layer/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../reverse/simple-resize/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme_extra.js" defer></script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

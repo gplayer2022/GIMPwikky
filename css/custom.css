@@ -5,14 +5,64 @@
   padding: 3px 0px 3px 6px;
   background-color: #f5f5f5;
 }
-
 .document h3 {
   margin-top: 32px;
   border-bottom: solid 1px #2980b9;
 }
+.document h4 {
+  position: relative;
+  padding-left: 32px;
+  border-bottom: dashed 1px #499bd1;
+}
+.document h4::before {
+  position: absolute;
+  top: -3px;
+  left: 6px;
+  font-size: 18px;
+  content: "□";
+  color: #499bd1;
+}
+.document h4::after {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  font-size: 18px;
+  content: "□";
+  color: #499bd1;
+}
 
 .document code {
   font-size: 16px;
+}
+
+/* 引用 */
+.document blockquote {
+  position: relative;
+  margin-left: 0;
+  padding-left: 6px;
+  border-left: #67b1e2 solid 2px;
+  background-color: #ececec;
+}
+.document blockquote::before {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 900;
+  color: #67b1e2;
+}
+.document blockquote p {
+  margin: 8px 0;
+  padding: 6px 0 6px 48px;
+}
+
+/* テーブル */
+.document .wy-table-responsive table td {
+  white-space: normal;
 }
 
 /* 注意書き */
@@ -20,7 +70,6 @@
   font-size: 14px;
   line-height: 1.6;
 }
-
 .admonition p code {
   color: #E74C3C !important;
 }
@@ -31,7 +80,6 @@
   display: flex;
   gap: 6px;
 }
-
 .diff figcaption {
   text-align: center;
   font-size: 18px;
